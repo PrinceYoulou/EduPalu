@@ -1,59 +1,134 @@
-/*****************************************************************************
- * voir truc avec flex ???
-*****************************************************************************/
-
-
-.menu {
-    clear: both;
+html {
+    height: 100%;
 }
 
-.menu-item {
-    width: 250px;
-    height: 250px;
-    background: #CECECE;
-    display: inline-block;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    overflow: hidden;
-
+body {
+    min-height: 100%;
+    position: relative;
 }
 
-h2 {
-    padding: 15px;
+section {
+    padding-bottom: 50px;
 }
 
 img{
+  width: auto;
+  align-items: center;
+}
+
+
+.jumbotron{
+  background-color: #0099cb;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+}
+
+.jumbotron p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: white
+}
+
+.card{
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card-description{
+    position: absolute;
+	background: black none repeat scroll 0% 0%;
+	padding: 2px 5px;
+    color: #fff;
+    opacity: .85;
+    bottom: 0px;
+    left: 0px;
+    min-width: 100%;
+    margin: 0px;
+}
+
+.card-description p{
+  padding: 0px 0px !important;
+  margin: 0;
+}
+
+.padding {
+  padding: 10px 0;
+}
+.text-muted {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.text-muted > a {
+  color: gray !important;
+}
+
+article {
+    text-align: justify;
+}
+section h1{
+    font-size: 1.5em;
+}
+
+section h2{
+    font-size: 1.3em;
+}
+
+section figcaption {
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.reponse {
+
+}
+
+blockquote {
+    text-align: right;
+    font-style: italic;
+}
+
+footer {
+    background-color: #0099cb;
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 0px;
 }
 
-.menu-img {
-    display: none;
-    padding: 0px;
+footer p {
+    margin: 0px 0px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
 }
 
-@media only screen and (min-width: 800px) {
-    .menu-item {
-        width: 275px;
-        height: 275px;
+footer a:link, footer a:visited {
+	color: white;
+}
+
+@media (min-width: 800px) {
+    html, .container {
+        width: 800px;
     }
 
-    h2 {
-        font-size: 1.6em;
+    html {
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    .menu-img {
-        display: inline-block;
-    }
 }
 
-@media only screen and (min-width: 1601px) {
-    .menu-item {
-        width: 300px;
-        height: 300px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-}
